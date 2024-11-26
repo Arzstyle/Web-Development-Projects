@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tugas 1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Nama Saya : M Akbar Rizky Saputra</h1>
+        <h2>Kelas : TI23A</h2>
+        <h2>NIM : 20230040236</h2>
+        <hr/>
+        <h3>Hobi Saya :</h3>
+        <button onclick="tampilkanProfile()">Tampilkan Hobi</button>
+        <ul id= "Hobi" style="display: none;">
+            <li>Bermain Game</li>
+            <li>Bermain Basket</li>
+            <li>Mendengarkan Musik</li>
+        </ul>
+        <script>
+            function tampilkanProfile(){
+                var hobi = document.getElementById("Hobi");
+                hobi.style.display = "block";
+            }
+            alert("Selamat Datang")
+        </script>
+    </body>
+</html>

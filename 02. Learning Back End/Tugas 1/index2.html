@@ -1,0 +1,28 @@
+<body>
+    <h1>Nama Saya : <b>M Akbar Rizky Saputra</b></h1>
+    <h2>Kelas : TI23A</h2>
+    <h2>NIM : 20230040236</h2>
+    <hr/>
+    <h3>Hobi Saya :</h3>
+    <button id="toggleButton">Tampilkan Hobi</button>
+    <ul id="Hobi" style="display: none;">
+        <li>Bermain Game</li>
+        <li>Bermain Basket</li>
+        <li>Mendengarkan Musik</li>
+    </ul>
+    
+    <script>
+        document.getElementById("toggleButton").addEventListener("click", function() {
+            var hobi = document.getElementById("Hobi");
+            if (hobi.style.display === "none") {
+                hobi.style.display = "block";
+                this.textContent = "Sembunyikan Hobi";
+            } else {
+                hobi.style.display = "none";
+                this.textContent = "Tampilkan Hobi";
+            }
+        });
+
+        alert("Selamat Datang");
+    </script>
+</body>
